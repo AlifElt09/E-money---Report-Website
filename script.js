@@ -69,7 +69,7 @@
             <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded"><i class="fas fa-trash"></i> Delete</button>
           </td>
         </tr>
-      `).join('');git init
+      `).join('')
     }
     updateStats();
   }
