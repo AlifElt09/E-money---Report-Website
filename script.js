@@ -54,7 +54,7 @@ function render() {
         <td class="px-4 py-3">${renderStatus(t.status)}</td>
         <td class="px-4 py-3">${t.date}</td>
         <td class="px-4 py-3 flex items-center space-x-2"> <!-- ✅ Perbaikan utama -->
-          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 rounded">
+          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 rounded ml-2">
             <i class="fas fa-edit mr-1"></i> Edit
           </button>
           <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded">
