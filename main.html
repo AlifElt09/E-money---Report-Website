@@ -98,30 +98,31 @@
 
       <!-- Transactions Table -->
       <div class="bg-white rounded-xl shadow border border-gray-200 overflow-hidden">
-        <div class="px-6 py-4 shadow-2xl flex justify-between items-center">
-          <h2 class="text-xl font-semibold">
-            <i class="fas fa-exchange-alt mr-2 text-white bg-blue-700 px-2.5 py-2 rounded-xl"></i>Transactions
-          </h2>
-          <span id="count" class="text-gray-500">0 items</span>
-        </div>
-        <div class="overflow-x-auto">
-          <table class="min-w-full">
-            <thead class="bg-gray-50 text-left text-gray-600 text-sm">
-              <tr>
-                <th class="px-4 py-3">Client</th>
-                <th class="px-4 py-3">Amount</th>
-                <th class="px-4 py-3">Status</th>
-                <th class="px-4 py-3">Date</th>
-                <th class="px-4 py-3">Actions</th>
-              </tr>
-            </thead>
-            <tbody id="list" class="divide-y text-gray-800">
-            </tbody>
-          </table>
-          <div id="empty" class="py-10 text-center text-gray-500 hidden">No transactions yet.</div>
-        </div>
-      </div>
-    </div>
+  <div class="px-6 py-4 shadow-2xl flex justify-between items-center">
+    <h2 class="text-xl font-semibold">
+      <i class="fas fa-exchange-alt mr-2 text-white bg-blue-700 px-2.5 py-2 rounded-xl"></i>Transactions
+    </h2>
+    <span id="count" class="text-gray-500">0 items</span>
+  </div>
+  <div class="overflow-x-auto">
+    <!-- ✅ table-fixed untuk stabilitas kolom -->
+    <table class="min-w-full table-fixed">
+      <thead class="bg-gray-50 text-left text-gray-600 text-sm">
+        <tr>
+          <th class="px-4 py-3">Client</th>
+          <th class="px-4 py-3">Amount</th>
+          <th class="px-4 py-3">Status</th>
+          <th class="px-4 py-3">Date</th>
+          <th class="px-4 py-3">Actions</th>
+        </tr>
+      </thead>
+      <!-- ✅ min-h-[200px] untuk mencegah layout melompat -->
+      <tbody id="list" class="divide-y text-gray-800 min-h-[200px]">
+      </tbody>
+    </table>
+    <div id="empty" class="py-10 text-center text-gray-500 hidden">No transactions yet.</div>
+  </div>
+</div>
   </main>
 
   <script src="script.js"></script>

@@ -53,12 +53,11 @@ function render() {
         <td class="px-4 py-3">Rp ${parseFloat(t.amount).toLocaleString()}</td>
         <td class="px-4 py-3">${renderStatus(t.status)}</td>
         <td class="px-4 py-3">${t.date}</td>
-        <td class="px-4 py-3">
-          <!-- ✅ Tombol dengan lebar tetap dan rata tengah -->
-          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 mr-2 rounded mb-1.5 w-20 flex justify-center">
+        <td class="px-4 py-3 flex items-center space-x-2"> <!-- ✅ Perbaikan utama -->
+          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 rounded inline-flex items-center">
             <i class="fas fa-edit mr-1"></i> Edit
           </button>
-          <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded w-20 flex justify-center">
+          <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded inline-flex items-center">
             <i class="fas fa-trash mr-1"></i> Delete
           </button>
         </td>
