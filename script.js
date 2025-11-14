@@ -53,12 +53,12 @@ function render() {
         <td class="px-4 py-3">Rp ${parseFloat(t.amount).toLocaleString()}</td>
         <td class="px-4 py-3">${renderStatus(t.status)}</td>
         <td class="px-4 py-3">${t.date}</td>
-        <td class="px-4 py-3 flex items-center space-x-2 mx-3"> <!-- ✅ Perbaikan utama -->
-          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 rounded gap-x-3 ">
-            <i class="fas fa-edit mr-1"></i> Edit
+        <td class="px-4 py-3 flex items-center space-x-2 "> <!-- ✅ Perbaikan utama -->
+          <button onclick="edit(${i})" class="text-white bg-blue-700 px-3 py-1.5 rounded gap-x-2.5 items-center">
+            <i class="fas fa-edit "></i> Edit
           </button>
-          <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded">
-            <i class="fas fa-trash mr-1"></i> Delete
+          <button onclick="del(${i})" class="bg-red-600 text-white px-3 py-1.5 rounded items-center">
+            <i class="fas fa-trash "></i> Delete
           </button>
         </td>
       </tr>
