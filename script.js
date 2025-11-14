@@ -1,7 +1,7 @@
 
 
   const user = JSON.parse(localStorage.getItem('user'));
-  if (!user) window.location.href = 'login.html';
+  if (!user) window.location.href = 'index.html';
 
 
   document.getElementById('welcomeMessage').textContent = `Hello, ${user.username}!`;
@@ -158,7 +158,7 @@
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.clear();
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
       }
     });
   }
